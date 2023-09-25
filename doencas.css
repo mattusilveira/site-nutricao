@@ -18,9 +18,6 @@
     box-sizing: border-box;
     font-family: var(--content-font);
 
-
-
-
 }
 
 body {
@@ -31,6 +28,8 @@ body {
 header {
     background-color: var(--green);
     padding: 45px;
+
+
 }
 
 nav {
@@ -43,6 +42,8 @@ nav {
 ul {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
     font-size: 20px;
 
 }
@@ -103,64 +104,64 @@ a:hover {
     align-items: center;
 }
 
+
+.container {
+    display: flex;
+    text-align: center;
+    margin: 10px;
+    padding: 40px;
+}
+
+.container h2 {
+    color: var(--green);
+}
+
+.caixa {
+    width: 450px;
+    margin: 50px;
+
+
+}
+
+
+.content h1 {
+    text-align: center;
+    color: var(--green);
+    margin: 40px;
+}
+
+
+.content p {
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 80px;
+
+
+}
+.content2 h2 {
+    text-align: center;
+    color: var(--green);
+    
+  
+
+
+}
+.content2 p {
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    width: 900px;
+}
+
+
+
+
 footer {
     background-color: var(--green);
     color: var(--white);
     text-align: center;
     padding: 15px;
+    display: block;
+    margin-top: 20px;
 
 }
-
-/*CONTEÚDO*/
-
-h1 {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 40px;
-    color: var(--green);
-    font-size: 26px;
-
-}
-
-p {
-    text-align: center;
-    width: 70%;
-    margin: -10px auto 40px auto;
-    font-weight: 300;
-}
-
-.content2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 70px;
-    margin: 60px 40px 60px 40px;
-    font-weight: 300;
-
-    .text {
-        font-size: 20px;
-    }
-
-    .titulo {
-        font-size: 24px;
-        color: var(--green);
-    }
-}
-
-
-.link-externo {
-    text-decoration: none;
-}
-
-
-.link-externo:hover {
-    color: var(--green);
-    text-decoration: none;
-}
-
-.title2{
-    text-align: center;
-    margin-top: -40px;
-    font-size: 16px;
-    color: var(--green);
-    letter-spacing: 6px;
-  }

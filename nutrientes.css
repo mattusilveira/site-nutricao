@@ -143,7 +143,7 @@ h2 {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin-top: -100px;
+    margin-top: -300px;
 }
 
 
@@ -228,13 +228,13 @@ footer {
     background-color: var(--green);
     color: var(--white);
     text-align: center;
-    padding: 15px;
+    padding: 40px;
     
 
 }
 
 .tabela {
-    margin-top: -560px;
+    margin-top: -260px;
     margin-left: 40px;
 }
 table {

@@ -22,11 +22,13 @@
 body {
     line-height: 1.4;
     background-color: var(--gray);
+    overflow-x: hidden;
 }
 
 header {
     background-color: var(--green);
     padding: 45px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 nav {
@@ -36,33 +38,41 @@ nav {
     padding: 0 20px;
 }
 
-ul {
-    list-style: none;
+header ul {
+    position: relative;
     display: flex;
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-
+    gap: 30px;
 }
 
-ul li {
-    margin-right: 20px;
+header ul li {
+    list-style: none;
 }
 
-ul li:last-child {
-    margin-right: 0;
-}
-
-ul li a {
+header ul li a {
+    position: relative;
     text-decoration: none;
-    color: var(--white);
+    font-size: 1em;
+    color: var(--ice-gray);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
 }
 
-a:hover {
-    font-weight: bold;
-    transition-duration: 0.7s;
+header ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: var(--gray);
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
 }
 
+header ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
 
 .search-box {
     position: absolute;
@@ -100,4 +110,73 @@ a:hover {
     align-items: center;
 }
 
+footer {
+    background-color: var(--green);
+    color: var(--white);
+    text-align: center;
+    padding: 15px;
 
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    margin: 10px;
+    padding: 40px;
+}
+
+.container h2 {
+    color: var(--green);
+}
+
+.caixa {
+    width: 450px;
+    margin: 50px;
+
+
+}
+
+
+.content h1 {
+    text-align: center;
+    color: var(--green);
+    margin: 40px;
+}
+
+
+.content p {
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 80px;
+
+
+}
+
+.content2 h2 {
+    text-align: center;
+    color: var(--green);
+
+
+
+
+}
+
+.content2 p {
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    width: 900px;
+}
+
+
+
+
+footer {
+    background-color: var(--green);
+    color: var(--white);
+    text-align: center;
+    padding: 15px;
+    display: block;
+    margin-top: 20px;
+
+}

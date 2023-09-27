@@ -27,6 +27,7 @@ body {
 header {
     background-color: var(--green);
     padding: 45px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 nav {
@@ -36,34 +37,41 @@ nav {
     padding: 0 20px;
 }
 
-ul {
-    list-style: none;
+header ul {
+    position: relative;
     display: flex;
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-
+    gap: 30px;
 }
 
-ul li {
-    margin-right: 20px;
+header ul li {
+    list-style: none;
 }
 
-ul li:last-child {
-    margin-right: 0;
-}
-
-ul li a {
+header ul li a {
+    position: relative;
     text-decoration: none;
-    color: var(--white);
+    font-size: 1em;
+    color: var(--ice-gray);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
 }
 
-a:hover {
-    font-weight: bold;
-    transition-duration: 0.7s;
+header ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: var(--gray);
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
 }
 
-
+header ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
 .search-box {
     position: absolute;
     right: 5px;
@@ -118,10 +126,10 @@ h2 {
 .nutrientes {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 100px;
+    gap: 20px;
     margin-left: 23px;
     text-align: left;
-    padding: 8px;
+    padding: 5px;
     margin: 20px;
     margin-bottom: 30px;
 
@@ -144,7 +152,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 650px;
+    width: 700px;
     bottom: -50px;
 }
 
@@ -154,6 +162,8 @@ h2 {
     border-radius: 10px;
     opacity: 0;
     transition: opacity .2s;
+    height: 450px;
+    width: 650px;
 }
 
 
@@ -194,7 +204,7 @@ h2 {
 }
 
 
-div {
+.texto{
     margin-bottom: 20px;
     margin-top: 30px;
 }
@@ -204,3 +214,59 @@ div {
 
 
 }
+
+.p2 {
+    gap: 50px;
+    margin-left: 23px;
+    text-align: left;
+    padding: 8px;
+    margin: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--green);
+    color: var(--white);
+    text-align: center;
+    padding: 15px;
+    
+
+}
+
+.tabela {
+    margin-top: -560px;
+    margin-left: 40px;
+}
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+
+}
+
+tr:nth-child(even) {
+    background-color: rgb(132, 207, 132);
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(132, 207, 132);
+}
+
+
+th {
+    background-color: var(--green);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+h1 {
+    text-align: center;
+}
+

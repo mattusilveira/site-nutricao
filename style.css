@@ -180,3 +180,73 @@ footer {
     margin-top: 20px;
 
 }
+
+/* CONTEUDO */
+
+
+.imgA {
+    width: 800px;
+    height: 509px;
+}
+
+.Pag1 {
+    text-align: Center;
+    text-decoration: none;
+    padding: 10px 10px 0px;
+}
+
+h1 {
+    color: var(--green);
+}
+
+h2 {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    text-align: center;
+    width: 70%;
+    margin: 10px auto 40px auto;
+    font-weight: 300;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item1 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://marjan.com.br/wp-content/uploads/2023/04/o-que-sao-alimentos-in-natura-e-por-que-escolhe-los.jpeg);
+    border: 7px solid #f1fff6;
+    color: #f1fff6;
+    text-align: center;
+    padding: 6rem;
+}
+
+.grid-item2 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://longevidadesaudavel.com.br/wp-content/uploads/2022/07/healthy-food-and-medical-equipment-1024x683.jpg);
+    border: 7px solid #ffffff;
+    color: #f1fff6;
+    text-align: center;
+    padding: 6rem;
+}
+
+.grid-item3 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://blog.brkambiental.com.br/wp-content/uploads/2019/10/original-7b1c4112d366cf62b8ec77c8db01e27e.jpg);
+    border: 7px solid #f1fff6;
+    color: #f1fff6;
+    text-align: center;
+    padding: 6rem;
+}
